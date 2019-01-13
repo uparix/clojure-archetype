@@ -35,6 +35,10 @@ mvn archetype:generate \
 ```
   mvn clean package
 ```
+## Use with Leiningen
+
+Add project.clj to Leiningen in your IDE.
+
 
 ## Release History
  - 1.0.0
