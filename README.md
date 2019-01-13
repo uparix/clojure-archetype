@@ -5,6 +5,8 @@ This Maven Archetype creates and builds a clojure project only using maven build
 ## Software Stack
 
 - Clojure 1.10.0
+- Junit 4.12
+- Midje 1.9.2
 
 ## Local Installation
 

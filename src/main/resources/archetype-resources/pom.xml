@@ -9,6 +9,17 @@
     <version>${version}</version>
     <packaging>jar</packaging>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>clojars</id>
+            <url>https://repo.clojars.org/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.clojure</groupId>
@@ -21,6 +32,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>midje</groupId>
+            <artifactId>midje</artifactId>
+            <version>1.9.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -31,12 +48,16 @@
                 <version>1.8.1</version>
                 <executions>
                     <execution>
-                        <id>default</id>
+                        <id>compile</id>
+                        <phase>compile</phase>
                         <goals>
-                            <goal>add-source</goal>
                             <goal>compile</goal>
-                            <goal>add-test-source</goal>
-                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
                             <goal>test</goal>
                         </goals>
                     </execution>
