@@ -41,11 +41,22 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>src/main/clojure</sourceDirectory>
+        <testSourceDirectory>src/test/clojure</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.theoryinpractise</groupId>
                 <artifactId>clojure-maven-plugin</artifactId>
                 <version>1.8.1</version>
+                <configuration>
+                    <sourceDirectories>
+                        <sourceDirectory>src/main/clojure</sourceDirectory>
+                    </sourceDirectories>
+                    <testSourceDirectories>
+                        <testSourceDirectory>src/test/clojure</testSourceDirectory>
+                    </testSourceDirectories>
+                </configuration>
+                <extensions>true</extensions>
                 <executions>
                     <execution>
                         <id>compile</id>
