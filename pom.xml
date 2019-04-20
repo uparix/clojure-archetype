@@ -7,12 +7,20 @@
     <groupId>com.uparix</groupId>
     <artifactId>clojure-archetype</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <scm>
         <connection>scm:git:https@github.com:uparix/clojure-archetype.git</connection>
         <developerConnection>scm:git:git@github.com:uparix/clojure-archetype.git</developerConnection>
         <url>https://github.com/uparix/clojure-archetype</url>
     </scm>
+
+    <repositories>
+        <repository>
+            <id>uparix-nexus</id>
+            <url>https://www.uparix.com/nexus/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
