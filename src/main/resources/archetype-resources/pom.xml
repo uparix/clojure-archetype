@@ -35,7 +35,7 @@
         <dependency>
             <groupId>midje</groupId>
             <artifactId>midje</artifactId>
-            <version>1.9.2</version>
+            <version>1.9.8</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
